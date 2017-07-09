@@ -1,4 +1,4 @@
-# VisualRecognition-MobileApp
+# VisualRecognition-findSimilar-MobileApp
 
 Watson Visual Recognitionサービスを使った類似画像検索を使ったデモです。
 
