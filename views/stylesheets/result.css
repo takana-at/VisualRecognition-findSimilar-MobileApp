@@ -1,0 +1,88 @@
+html{
+	margin: 0;	/* 余白の削除 */
+	padding: 0;	/* 余白の削除 */
+	height: 100%;	/* 縦の高さを100% */
+	width: 100%;	/* 横の幅を100% */
+}
+body {
+	margin: 0;	/* 余白の削除 */
+	padding: 0;	/* 余白の削除 */
+	height: 100%;	/* 縦の高さを100% */
+	width: 100%;	/* 横の幅を100% */
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap{
+	overflow: hidden;
+  	font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	color: #000000;
+
+     position: relative;
+     height:auto !important; /*IE6対策*/
+     height: 100%; /*IE6対策*/
+     min-height: 100%;
+     min-width: 100%;
+  	margin:0;
+  	padding:0;
+  	text-align: center; 
+}
+div#header{
+	background-color:#2F4F4F;
+  	wigth:100%;
+  	height:15%;
+  	margin-top:0;
+  	padding-top:0;
+  	min-width: 100%;
+}
+h1 {
+  font:caption;
+  font-size:8vh;
+  wight:100%;
+  text-align:center;
+  color:#FFFFFF;
+  margin: 0 auto;    
+}
+div#header_blank{
+  	height:8vh;
+}
+div#contents {
+     position: relative;
+     height:auto !important; /*IE6対策*/
+     height: 100%; /*IE6対策*/
+     min-height: 100%;
+     min-width: 100%;
+	font-size: 5vh;	
+}
+label {
+  color: white;  
+  background-color:#708090;
+  padding: 4vh;
+  border-radius: 5%;
+}
+table{
+   	margin: 0 auto;  
+  	height:8vh;	
+}
+p{
+	font-weight:lighter;
+	font-size: 6vh;	
+	color:#00B7FF
+}
+b{
+	font-weight:bold;
+	font-size: 5vh;	
+	color:#000000;
+}
+div#footer{
+	background-color:#2F4F4F;
+  	height:10%;
+  	min-width: 100%;
+   	position: absolute;
+  	bottom:0;
+}
+#img_set{
+	 font-size:4vh;
+  	 margin: 0 auto;   
+  	
+}
+	

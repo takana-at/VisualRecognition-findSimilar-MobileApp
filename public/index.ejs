@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="./app.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel='stylesheet' href='./stylesheets/result.css' />
+	<script type="text/javascript">
+
+$(function(){
+		var selfInput = $(this).find('input[type="file"]');
+		selfInput.change(function(){
+			var file = $(this).prop('files')[0];
+			if(!file.type.match(/image\/\w+/)){
+				alert("画像ファイルを選択してください");
+				return;
+			}
+			$('#img_check').submit();
+		})
+});
+</script>
+	
+</head>
+<body>
+   <div class="wrap">
+     <div id="header"><h1>類似検索アプリ</h1></div>
+     <div id="header_blank"></div>
+     <div id="contents">
+		<form method="post" action="./findSimilar" id="img_check" enctype="multipart/form-data" >
+			<label for="img_set">
+				＋写真を選択
+				<input type="file" name="img_set" id="img_set" style="display:none;">
+			</label>
+		</form>
+		<br/>
+		<table >
+			<tr>
+			<%	for(var i = 0; i < info.length; i++){ %>
+			<p><%- "<a href=\""+info[i].imgUrl+"\" target=\"_blank\"/>" + info[i].name + "</a>" %>
+			<b><%- info[i].score+"%似ています" %></b></p>
+			<% } %>
+			</tr>
+		</table>
+		<div id="result"></div>
+	</div>
+    <div id="footer"></div>
+   </div>
+</body>
+</html>
